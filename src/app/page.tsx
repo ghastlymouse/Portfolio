@@ -1,8 +1,6 @@
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Hello from "@/components/Hello";
-import Projects from "@/components/projects/Projects";
-import Skills from "@/components/Skills";
+import About from "@/app/_components/About";
+import Hello from "@/app/_components/Hello";
+import Skills from "@/app/_components/Skills";
 
 export default function Home() {
   return (
@@ -10,8 +8,6 @@ export default function Home() {
       <Hello />
       <About />
       <Skills />
-      <Projects />
-      <Contact />
     </main>
   );
 }
