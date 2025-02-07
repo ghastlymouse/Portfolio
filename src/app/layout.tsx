@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NavigationBar from "@/components/NavigationBar";
+import ClientLayout from "@/components/ClientLayout";
+import Sidebar from "@/components/SideBar";
 
 export const metadata: Metadata = {
   title: "무시무시한쥐의 포트폴리오",
@@ -15,8 +16,10 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <NavigationBar />
-        {children}
+        <ClientLayout>
+          <Sidebar />
+          {children}
+        </ClientLayout>
       </body>
     </html>
   );
