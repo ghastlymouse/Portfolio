@@ -5,17 +5,16 @@ import { SiVelog } from "react-icons/si";
 
 const Bio = () => {
   return (
-    <div className="grid grid-cols-3">
+    <div className="pt-20 grid grid-cols-3 gap-x-2">
       <Link
         href={"https://github.com/ghastlymouse"}
         target="_blank"
         className="border-2 rounded-lg p-10 bg-[#A67BC1]"
       >
-        <div className="flex items-center gap-10">
+        <div className="flex flex-col justify-center items-center">
           <BsGithub size={80} />
-          <span>Github</span>
+          <p>소스코드 저장소</p>
         </div>
-        <p>소스코드 저장소</p>
       </Link>
       <Link
         href={"https://gamasod.tistory.com/"}
