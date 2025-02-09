@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>
+      <body className="max-h-screen">
         <ClientLayout>
           <Sidebar />
           {children}

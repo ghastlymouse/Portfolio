@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
-import { SiTistory } from "react-icons/si";
-import { SiVelog } from "react-icons/si";
+import { SiTistory, SiVelog } from "react-icons/si";
 
 const Bio = () => {
   return (
@@ -13,7 +12,7 @@ const Bio = () => {
       >
         <div className="flex flex-col justify-center items-center">
           <BsGithub size={80} />
-          <p>소스코드 저장소</p>
+          <p>Github</p>
         </div>
       </Link>
       <Link
@@ -23,7 +22,7 @@ const Bio = () => {
       >
         <div className="flex flex-col justify-center items-center">
           <SiTistory size={80} />
-          <p>기존 공부 내용 기록</p>
+          <p>TiStory</p>
         </div>
       </Link>
       <Link
@@ -33,7 +32,7 @@ const Bio = () => {
       >
         <div className="flex flex-col justify-center items-center">
           <SiVelog size={80} />
-          <p>신규 기록 중</p>
+          <p>Velog</p>
         </div>
       </Link>
     </div>
