@@ -22,4 +22,5 @@ body {
   background-color: #1e1e1e;
   color: #eaeaea;
   font-size: 1.25rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
