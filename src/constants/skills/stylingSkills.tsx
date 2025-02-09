@@ -4,11 +4,24 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 export const STYLING_SKILLS = {
   title: "Styling",
-  titleIcon: <FaPaintBrush size={32} />,
+  titleIcon: (
+    <FaPaintBrush
+      size={32}
+      style={{ filter: "drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.6))" }}
+    />
+  ),
   skills: ["Styled-Components", "Tailwind CSS"],
   colors: ["#DB7093", "#38B2AC"],
   icons: [
-    <SiStyledcomponents key="styled-components" size={32} />,
-    <RiTailwindCssFill key="tailwind-css" size={32} />,
+    <SiStyledcomponents
+      key="styled-components"
+      size={32}
+      style={{ filter: "drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.6))" }}
+    />,
+    <RiTailwindCssFill
+      key="tailwind-css"
+      size={32}
+      style={{ filter: "drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.6))" }}
+    />,
   ],
 };

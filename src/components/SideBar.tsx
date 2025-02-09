@@ -9,8 +9,13 @@ const Sidebar = () => {
   const dispatch = useAppDispatch();
   console.log(isOpened);
   return (
-    <div className="relative flex items-start">
-      {!isOpened && (
+    <div className="relative flex items-start h-full">
+      {isOpened ? (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-20"
+          onClick={() => dispatch(toggleNavVisible(false))}
+        ></div>
+      ) : (
         <button
           className="fixed top-1/2 left-0 z-20"
           onClick={() => dispatch(toggleNavVisible(true))}
@@ -18,17 +23,11 @@ const Sidebar = () => {
           열기
         </button>
       )}
-      {isOpened && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-10"
-          onClick={() => dispatch(toggleNavVisible(false))}
-        ></div>
-      )}
       <motion.nav
-        initial={{ x: "-100%" }}
-        animate={{ x: isOpened ? 0 : "-100%" }}
+        initial={{ x: "-90%" }}
+        animate={{ x: isOpened ? 0 : "-90%" }}
         transition={{ type: "spring", stiffness: 1200, damping: 150 }}
-        className="fixed top-0 left-0 h-full w-64 bg-gray-400 shadow-lg z-20"
+        className="fixed top-0 left-0 h-full w-64 bg-black text-white z-20 pr-4"
       >
         <button
           className=" absolute top-1/2 right-4 z-20"
@@ -39,7 +38,7 @@ const Sidebar = () => {
           닫기
         </button>
         <span>{"GhastlyMouse's Portfolio"}</span>
-        <ul className="h-full flex flex-col items-center justify-center gap-10 m-0 p-0">
+        <ul className="h-full flex flex-col items-center justify-center gap-10">
           <li className="cursor-pointer">About me</li>
           <li className="cursor-pointer">Projects</li>
           <li className="cursor-pointer">Contact</li>

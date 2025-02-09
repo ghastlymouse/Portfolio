@@ -4,11 +4,24 @@ import { IoLogoFirebase } from "react-icons/io5";
 
 export const BACKEND_SERVICES_SKILLS = {
   title: "Back End & Service",
-  titleIcon: <BsBack size={32} />,
+  titleIcon: (
+    <BsBack
+      size={32}
+      style={{ filter: "drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.6))" }}
+    />
+  ),
   skills: ["Supabase", "Firebase"],
   colors: ["#3ECF8E", "#FFCA28"],
   icons: [
-    <RiSupabaseFill key="supabase" size={32} />,
-    <IoLogoFirebase key="firebase" size={32} />,
+    <RiSupabaseFill
+      key="supabase"
+      size={32}
+      style={{ filter: "drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.6))" }}
+    />,
+    <IoLogoFirebase
+      key="firebase"
+      size={32}
+      style={{ filter: "drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.6))" }}
+    />,
   ],
 };
