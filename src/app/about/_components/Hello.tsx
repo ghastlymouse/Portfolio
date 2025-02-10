@@ -1,6 +1,6 @@
 const Hello = () => {
   return (
-    <section className="text-xl">
+    <section className="text-xl mt-20">
       <div className="flex flex-col justify-start items-center">
         <span className="text-5xl font-semibold">Hello</span>
         <span className="text-3xl">솔직하고 실행력 있는 개발자</span>

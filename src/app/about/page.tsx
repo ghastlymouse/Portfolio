@@ -4,7 +4,7 @@ import Skills from "./_components/Skills";
 
 const AboutPage = () => {
   return (
-    <main className="flex flex-col justify-center items-center mt-20 mb-40">
+    <main className="flex flex-col justify-center items-center mb-40">
       <Hello />
       <About />
       <Skills />
