@@ -4,7 +4,7 @@ import { SiTistory, SiVelog } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-32 p-8 bg-black text-white flex justify-between items-center z-0">
+    <footer className="w-full bottom-0 p-8 bg-black text-white flex justify-between items-center z-0">
       <div className="flex flex-col">
         <span>Copyright©2025 GhastlyMouse All Rights Reserved. </span>
         <span>gusdnr0839@gmail.com</span>
