@@ -3,7 +3,7 @@ import { FaPeopleCarryBox } from "react-icons/fa6";
 
 const Hello = () => {
   return (
-    <section className="mt-20">
+    <section className="mt-20 h-screen">
       <div className="flex flex-col gap-20">
         <div className="flex flex-col items-center">
           <span className="text-[200px] font-semibold">Hello World!</span>
@@ -19,7 +19,7 @@ const Hello = () => {
         <div className="grid grid-cols-2 gap-x-10 text-2xl">
           <div className="bg-white bg-opacity-60 border-2 rounded-lg shadow-custom w-full p-4">
             <p className="text-4xl leading-8 flex items-end gap-2">
-              개발자 특성성 <RiComputerLine size={40} color="gray" />
+              개발자 특성 <RiComputerLine size={40} color="gray" />
             </p>
             <ul className="*:before:content-['○']">
               <li>

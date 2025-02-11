@@ -5,7 +5,7 @@ import Bio from "./Bio";
 
 const About = () => {
   return (
-    <section>
+    <section className="h-screen">
       <p className="w-full text-center text-5xl font-semibold pt-20 pb-10">
         About me
       </p>
