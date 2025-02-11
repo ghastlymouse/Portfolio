@@ -5,8 +5,8 @@ import Sidebar from "@/components/SideBar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "무시무시한쥐의 포트폴리오",
-  description: "무시무시한쥐의 포트폴리오",
+  title: "정현욱 | 포트폴리오",
+  description: "정현욱 프론트엔드 포트폴리오",
 };
 
 export default function RootLayout({
