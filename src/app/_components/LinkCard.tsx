@@ -6,7 +6,7 @@ const LinkCard = () => {
     <div className="flex gap-2 w-11/12">
       <Link
         href={"/about"}
-        className="bg-white bg-opacity-60 h-96 border-2 rounded-lg shadow-custom w-1/2 p-4 flex flex-col justify-between hover:scale-110 hover:shadow-hover"
+        className="bg-white bg-opacity-60 h-96 border-2 rounded-lg shadow-custom w-1/2 p-4 flex flex-col justify-between hover:scale-110 hover:shadow-hover transition-transform duration-300 ease-in-out"
       >
         <div>
           <span className="text-7xl">ABOUT</span>
@@ -24,7 +24,7 @@ const LinkCard = () => {
       </Link>
       <Link
         href={"/projects"}
-        className="bg-white bg-opacity-60 h-96 border-2 rounded-lg shadow-custom w-1/2 p-4 flex flex-col justify-between hover:scale-110 hover:shadow-hover"
+        className="bg-white bg-opacity-60 h-96 border-2 rounded-lg shadow-custom w-1/2 p-4 flex flex-col justify-between hover:scale-110 hover:shadow-hover transition-transform duration-300 ease-in-out"
       >
         <div>
           <span className="text-7xl">PROJECTS</span>
