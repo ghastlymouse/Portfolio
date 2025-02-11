@@ -1,10 +1,4 @@
-type SkillCardType = {
-  title: string;
-  titleIcon: React.ReactNode;
-  skills: string[];
-  colors: string[];
-  icons: React.ReactNode[];
-};
+import { SkillCardType } from "@/app/type/skillCardType";
 
 const SkillCard = (skillInfo: SkillCardType) => {
   const { title, titleIcon, skills, colors, icons } = skillInfo;
