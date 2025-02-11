@@ -41,7 +41,7 @@ const Sidebar = () => {
           <LiaGripLinesVerticalSolid size={40} />
         </button>
         <Link href={"/"} className="block text-center mt-8">
-          {"GhastlyMouse's Portfolio"}
+          {"HyunUk's Portfolio"}
         </Link>
         <ul className="flex flex-col items-center justify-center gap-10 mt-10">
           <Link href={"/about"}>About me</Link>
