@@ -1,5 +1,5 @@
-const Contact = () => {
-  return <div>Contact</div>;
+const ContactPage = () => {
+  return <main className="h-screen">ContactPage</main>;
 };
 
-export default Contact;
+export default ContactPage;

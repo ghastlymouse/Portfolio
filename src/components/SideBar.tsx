@@ -36,10 +36,10 @@ const Sidebar = () => {
 
       {/* 사이드바 애니메이션 */}
       <motion.nav
-        initial={{ x: "-80%" }}
-        animate={{ x: isOpened ? 0 : "-80%" }}
+        initial={{ x: "-90%" }}
+        animate={{ x: isOpened ? 0 : "-90%" }}
         transition={{ type: "spring", stiffness: 1200, damping: 150 }}
-        className="fixed top-0 left-0 w-64 bg-black text-white z-40 h-full pr-4"
+        className="fixed top-0 left-0 w-64 bg-black text-white z-40 h-full"
       >
         <div className="sticky top-1/2 transform -translate-y-1/2">
           {/* 사이드바 닫기 버튼 */}

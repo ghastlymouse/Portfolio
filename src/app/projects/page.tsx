@@ -1,5 +1,11 @@
-const Projects = () => {
-  return <div>Projects</div>;
+import Projects from "./_components/Projects";
+
+const ProjectPage = () => {
+  return (
+    <main className="h-screen">
+      <Projects />
+    </main>
+  );
 };
 
-export default Projects;
+export default ProjectPage;
