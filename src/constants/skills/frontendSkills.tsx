@@ -5,8 +5,9 @@ import { SiJavascript } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
+import { SkillCardType } from "@/app/type/skillCardType";
 
-export const FRONTEND_SKILLS = {
+export const FRONTEND_SKILLS: SkillCardType = {
   title: "Front End",
   titleIcon: (
     <BsFront

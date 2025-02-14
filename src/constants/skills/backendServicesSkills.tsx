@@ -1,8 +1,9 @@
 import { BsBack } from "react-icons/bs";
 import { RiSupabaseFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
+import { SkillCardType } from "@/app/type/skillCardType";
 
-export const BACKEND_SERVICES_SKILLS = {
+export const BACKEND_SERVICES_SKILLS: SkillCardType = {
   title: "Back End & Service",
   titleIcon: (
     <BsBack

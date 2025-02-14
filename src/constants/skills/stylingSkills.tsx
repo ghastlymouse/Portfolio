@@ -1,8 +1,9 @@
 import { FaPaintBrush } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SkillCardType } from "@/app/type/skillCardType";
 
-export const STYLING_SKILLS = {
+export const STYLING_SKILLS: SkillCardType = {
   title: "Styling",
   titleIcon: (
     <FaPaintBrush

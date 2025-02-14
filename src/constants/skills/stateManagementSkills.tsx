@@ -1,8 +1,9 @@
+import { SkillCardType } from "@/app/type/skillCardType";
 import { FaArrowsRotate } from "react-icons/fa6";
 import { SiRedux } from "react-icons/si";
 import { SiReactquery } from "react-icons/si";
 
-export const STATE_MANAGEMENT_SKILLS = {
+export const STATE_MANAGEMENT_SKILLS: SkillCardType = {
   title: "State Management",
   titleIcon: (
     <FaArrowsRotate
