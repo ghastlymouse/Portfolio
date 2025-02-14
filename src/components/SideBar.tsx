@@ -11,6 +11,7 @@ const Sidebar = () => {
   const isOpened = useAppSelector((state) => state.nav.isNavVisible);
   const dispatch = useAppDispatch();
 
+  // 스크롤 막기
   useEffect(() => {
     if (isOpened) {
       document.body.style.overflow = "hidden";
@@ -42,7 +43,7 @@ const Sidebar = () => {
         className="fixed top-0 left-0 w-64 bg-black text-white z-40 h-full"
       >
         <div className="sticky top-1/2 transform -translate-y-1/2">
-          {/* 사이드바 닫기 버튼 */}
+          {/* 사이드바 토글 버튼 */}
           <button
             className="absolute top-1/2 right-0 z-30 bg-black text-white rounded-full"
             onClick={() => {

@@ -6,7 +6,7 @@ const Hello = () => {
     <section className="mt-20 h-screen">
       <div className="flex flex-col gap-20">
         <div className="flex flex-col items-center">
-          <span className="text-[200px] font-semibold">Hello World!</span>
+          <span className="text-[200px] font-semibold">HELLO WORLD!</span>
           <p className="text-5xl">
             솔직함과 실행력을 갖춘 개발자
             <span className="text-7xl text-violet-500 font-semibold">

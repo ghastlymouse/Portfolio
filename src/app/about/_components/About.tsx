@@ -1,7 +1,6 @@
 import { IoPersonSharp } from "react-icons/io5";
 import { FaBirthdayCake } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import Bio from "./Bio";
 
 const About = () => {
   return (
@@ -29,7 +28,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Bio />
     </section>
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import About from "./About";
+import Bio from "./Bio";
 import Hello from "./Hello";
 import Skills from "./Skills";
 
@@ -14,7 +14,7 @@ const ScrollAnimation = () => {
         <Skills />
       </div>
       <div>
-        <About />
+        <Bio />
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import Projects from "./_components/Projects";
 
 const ProjectPage = () => {
   return (
-    <main className="h-screen">
+    <main className="mb-40">
       <Projects />
     </main>
   );
