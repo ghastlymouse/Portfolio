@@ -1,9 +1,9 @@
 "use client";
 
+import TransitionLink from "@/app/_components/TransitionLink";
 import { useAppDispatch, useAppSelector } from "@/hooks/reduxHooks";
 import { toggleNavVisible } from "@/redux/navSlice";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useEffect } from "react";
 import { LiaGripLinesVerticalSolid } from "react-icons/lia";
 
@@ -57,38 +57,10 @@ const Sidebar = () => {
             <LiaGripLinesVerticalSolid size={40} />
           </button>
           <ul className="flex flex-col items-center justify-center gap-10 mt-10">
-            <Link
-              href={"/"}
-              onClick={() => dispatch(toggleNavVisible(false))}
-              className="relative transition-all duration-300 ease-out group"
-            >
-              Home
-              <span className="absolute inset-0 flex items-center justify-center w-full h-full scale-0 bg-white/20 rounded-full transition-transform duration-300 ease-out group-hover:scale-150"></span>
-            </Link>
-            <Link
-              href={"/about"}
-              onClick={() => dispatch(toggleNavVisible(false))}
-              className="relative transition-all duration-300 ease-out group"
-            >
-              About me
-              <span className="absolute inset-0 flex items-center justify-center w-full h-full scale-0 bg-white/20 rounded-full transition-transform duration-300 ease-out group-hover:scale-150"></span>
-            </Link>
-            <Link
-              href={"/projects"}
-              onClick={() => dispatch(toggleNavVisible(false))}
-              className="relative transition-all duration-300 ease-out group"
-            >
-              Projects
-              <span className="absolute inset-0 flex items-center justify-center w-full h-full scale-0 bg-white/20 rounded-full transition-transform duration-300 ease-out group-hover:scale-150"></span>
-            </Link>
-            <Link
-              href={"/contact"}
-              onClick={() => dispatch(toggleNavVisible(false))}
-              className="relative transition-all duration-300 ease-out group"
-            >
-              Contact
-              <span className="absolute inset-0 flex items-center justify-center w-full h-full scale-0 bg-white/20 rounded-full transition-transform duration-300 ease-out group-hover:scale-150"></span>
-            </Link>
+            <TransitionLink href="/" label="Home" />
+            <TransitionLink href="/about" label="About" />
+            <TransitionLink href="/projects" label="Projects" />
+            <TransitionLink href="/contact" label="Contact" />
           </ul>
         </div>
       </motion.nav>
