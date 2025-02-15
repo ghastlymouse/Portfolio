@@ -8,7 +8,8 @@ const TimelineCircle = (timelineInfo: TimelineCircleType) => {
 
   return (
     <div
-      className={`relative rounded-full border-8 border-sky-500 w-${diameter} h-${diameter} overflow-hidden flex justify-center items-center shadow-custom hover:shadow-hover hover:scale-110 transition-all duration-300 ease-in-out group`}
+      style={{ width: `${diameter}px`, height: `${diameter}px` }}
+      className={`relative rounded-full border-8 border-sky-500 overflow-hidden flex justify-center items-center shadow-custom hover:shadow-hover hover:scale-110 transition-all duration-300 ease-in-out group`}
     >
       <Image
         src={`/assets/devTimeline/${src}`}

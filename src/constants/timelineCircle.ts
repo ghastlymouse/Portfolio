@@ -1,5 +1,5 @@
 export const firstCircle = {
-  diameter: 64,
+  diameter: 256,
   date: "2024-04-16",
   src: "first_project.png",
   alt: "border속성을 처음 배운 날",
@@ -7,7 +7,7 @@ export const firstCircle = {
 };
 
 export const secondCircle = {
-  diameter: 64,
+  diameter: 240,
   date: "2024-05-28",
   src: "first_modal.png",
   alt: "커스텀 모달을 처음 만든 날",
@@ -15,7 +15,7 @@ export const secondCircle = {
 };
 
 export const thirdCircle = {
-  diameter: 72,
+  diameter: 288,
   date: "2024-08-21",
   src: "final_project.png",
   alt: "최종 프로젝트",
@@ -23,7 +23,7 @@ export const thirdCircle = {
 };
 
 export const fourthCircle = {
-  diameter: 96,
+  diameter: 96 * 4,
   date: "",
   src: "ghastlymouse",
   alt: "무시무시한 쥐",
