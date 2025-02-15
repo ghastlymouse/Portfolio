@@ -19,9 +19,14 @@ const Contact = () => {
     if (!message.trim()) return alert("내용을 입력해주세요!");
 
     emailjs
-      .sendForm("service_ngb2xna", "template_83und8m", form.current, {
-        publicKey: "nXQn0lmf49Ha_W672",
-      })
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID!,
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           console.log("성공!");
