@@ -5,7 +5,7 @@ export const projectList: ProjectInfoType[] = [
     name: "Voyage X",
     member: 6,
     duration: "2024.07 - 2024.08",
-    image: "/projectThumbnail/VoyageX_Thumbnail.png",
+    image: "/assets/projectThumbnail/VoyageX_Thumbnail.png",
     description:
       "미래의 우주 여행을 컨셉의 우주 여행 티켓 예약과 관련 굿즈 판매 플랫폼",
     features: [
