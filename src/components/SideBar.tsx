@@ -37,8 +37,8 @@ const Sidebar = () => {
 
       {/* 사이드바 애니메이션 */}
       <motion.nav
-        initial={{ x: "-90%" }}
-        animate={{ x: isOpened ? 0 : "-90%" }}
+        initial={{ x: "-88%" }}
+        animate={{ x: isOpened ? 0 : "-88%" }}
         transition={{ type: "spring", stiffness: 1200, damping: 150 }}
         className="fixed top-0 left-0 w-64 bg-black text-white z-40 h-full"
       >
@@ -56,32 +56,38 @@ const Sidebar = () => {
           >
             <LiaGripLinesVerticalSolid size={40} />
           </button>
-          <Link
-            href={"/"}
-            onClick={() => dispatch(toggleNavVisible(false))}
-            className="block text-center mt-8"
-          >
-            <p>{"HyunUk's"}</p>
-            <p>Portfolio</p>
-          </Link>
           <ul className="flex flex-col items-center justify-center gap-10 mt-10">
+            <Link
+              href={"/"}
+              onClick={() => dispatch(toggleNavVisible(false))}
+              className="relative transition-all duration-300 ease-out group"
+            >
+              Home
+              <span className="absolute inset-0 flex items-center justify-center w-full h-full scale-0 bg-white/20 rounded-full transition-transform duration-300 ease-out group-hover:scale-150"></span>
+            </Link>
             <Link
               href={"/about"}
               onClick={() => dispatch(toggleNavVisible(false))}
+              className="relative transition-all duration-300 ease-out group"
             >
               About me
+              <span className="absolute inset-0 flex items-center justify-center w-full h-full scale-0 bg-white/20 rounded-full transition-transform duration-300 ease-out group-hover:scale-150"></span>
             </Link>
             <Link
               href={"/projects"}
               onClick={() => dispatch(toggleNavVisible(false))}
+              className="relative transition-all duration-300 ease-out group"
             >
               Projects
+              <span className="absolute inset-0 flex items-center justify-center w-full h-full scale-0 bg-white/20 rounded-full transition-transform duration-300 ease-out group-hover:scale-150"></span>
             </Link>
             <Link
               href={"/contact"}
               onClick={() => dispatch(toggleNavVisible(false))}
+              className="relative transition-all duration-300 ease-out group"
             >
               Contact
+              <span className="absolute inset-0 flex items-center justify-center w-full h-full scale-0 bg-white/20 rounded-full transition-transform duration-300 ease-out group-hover:scale-150"></span>
             </Link>
           </ul>
         </div>
