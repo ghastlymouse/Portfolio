@@ -6,8 +6,11 @@ const Footer = () => {
   return (
     <footer className="w-full bottom-0 p-8 bg-gray-800 text-white flex justify-between items-center z-0">
       <div className="flex flex-col">
-        <span>Copyright©2025 GhastlyMouse All Rights Reserved. </span>
-        <span>gusdnr0839@gmail.com</span>
+        <p>Copyright©2025 GhastlyMouse. All Rights Reserved.</p>
+        <p className="text-lg">
+          Design and code created by GhastlyMouse. Some assets generated with
+          AI.
+        </p>
       </div>
       <div className="flex gap-4 items-center">
         <Link href={"https://github.com/ghastlymouse"} target="_blank">

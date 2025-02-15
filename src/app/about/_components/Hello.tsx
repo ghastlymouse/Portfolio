@@ -1,10 +1,11 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaPeopleCarryBox } from "react-icons/fa6";
+import About from "./About";
 
 const Hello = () => {
   return (
-    <section className="mt-20 h-screen">
-      <div className="flex flex-col gap-20">
+    <section className="mt-20">
+      <div className="flex flex-col items-center gap-20">
         <div className="flex flex-col items-center">
           <span className="text-[200px] font-semibold">HELLO WORLD!</span>
           <p className="text-5xl">
@@ -16,6 +17,7 @@ const Hello = () => {
             이라고 합니다~!
           </p>
         </div>
+        <About />
         <div className="grid grid-cols-2 gap-x-10 text-2xl">
           <div className="bg-white bg-opacity-60 border-2 rounded-lg shadow-custom w-full p-4">
             <p className="text-4xl leading-8 flex items-end gap-2">

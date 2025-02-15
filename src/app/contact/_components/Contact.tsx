@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center mb-40">
       <h1 className="text-[200px]">CONTACT</h1>
       <div className="grid grid-cols-2 gap-x-10 bg-white bg-opacity-60 border-2 rounded-lg shadow-custom w-3/4 p-4">
         <div className="flex flex-col items-center">
@@ -76,7 +76,7 @@ const Contact = () => {
             id="message"
             name="message"
             placeholder="Feel free to leave a message.."
-            className="w-full p-2 rounded-lg h-[200px]"
+            className="w-full p-2 rounded-lg h-[200px] resize-none"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required

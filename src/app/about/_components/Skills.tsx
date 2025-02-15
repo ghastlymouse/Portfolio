@@ -6,7 +6,7 @@ import { BACKEND_SERVICES_SKILLS } from "@/constants/skills/backendServicesSkill
 
 const Skills = () => {
   return (
-    <section className="h-screen">
+    <section className="">
       <p className="flex justify-center text-5xl font-semibold pt-20 pb-10">
         My Skills
       </p>
