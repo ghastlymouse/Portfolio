@@ -7,6 +7,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "정현욱 | 포트폴리오",
   description: "정현욱(무시무시한 쥐) 프론트엔드 포트폴리오",
+  icons: {
+    icon: "/cheese.svg",
+  },
 };
 
 export default function RootLayout({
