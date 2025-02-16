@@ -1,6 +1,6 @@
 import {
   firstCircle,
-  fourthCircle,
+  // fourthCircle,
   secondCircle,
   thirdCircle,
 } from "@/constants/timelineCircle";

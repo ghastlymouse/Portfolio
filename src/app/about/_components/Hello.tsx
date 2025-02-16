@@ -1,5 +1,5 @@
 import { collabStyle, devCharacter } from "@/constants/Character";
-import About from "./About";
+// import About from "./About";
 import Character from "./Character";
 
 const Hello = () => {
