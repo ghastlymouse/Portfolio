@@ -8,9 +8,20 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        "2xl": "1536px",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      boxShadow: {
+        custom: "4px 4px 10px rgba(0, 0, 0, 0.1)",
+        hover: "4px 4px 10px rgba(0, 0, 0, 0.6)",
       },
     },
   },
