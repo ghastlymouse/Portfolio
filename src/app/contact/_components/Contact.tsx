@@ -40,11 +40,13 @@ const Contact = () => {
   };
 
   return (
-    <section className="flex flex-col items-center mb-40">
-      <h1 className="text-[200px]">CONTACT</h1>
-      <div className="grid grid-cols-2 gap-x-10 bg-white bg-opacity-60 border-2 rounded-lg shadow-custom w-3/4 p-4">
-        <div className="flex flex-col items-center">
-          <p className="text-3xl">gusdnr0839@gmail.com</p>
+    <section className="flex flex-col items-center mb-40 text-lg">
+      <h1 className="text-7xl lg:text-9xl mt-20">CONTACT</h1>
+      <div className="flex flex-col lg:flex-row bg-white bg-opacity-60 border-2 rounded-lg shadow-custom w-3/4 p-4">
+        <div className="flex flex-col items-center w-full lg:w-1/2">
+          <p className="sm:text-base md:text-xl lg:text-3xl">
+            gusdnr0839@gmail.com
+          </p>
           <Image
             src={"/ghastly_mouse_2D.svg"}
             alt="ghastly_mouse"
@@ -55,7 +57,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={handleSubmitEmail}
-          className="flex flex-col items-start gap-4 bg-gray-300 rounded-lg p-4"
+          className="w-full lg:w-1/2 flex flex-col items-start gap-4 bg-gray-300 rounded-lg p-4"
         >
           <input
             id="email"

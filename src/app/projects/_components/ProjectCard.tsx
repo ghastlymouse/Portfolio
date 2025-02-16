@@ -15,11 +15,11 @@ const ProjectCard = (projectInfo: ProjectInfoType) => {
     source,
   } = projectInfo;
   return (
-    <div className="bg-white bg-opacity-60 border-2 rounded-lg shadow-custom w-full p-4 flex flex-col items-start gap-2">
-      <h1 className="text-2xl">{name}</h1>
-      <div className="text-lg flex gap-2">
+    <div className="bg-white bg-opacity-60 min-w-72 border-2 rounded-lg shadow-custom w-full p-4 flex flex-col items-start gap-2 text-base lg:text-lg">
+      <h1 className="sm:text-lg md:text-xl lg:text-2xl">{name}</h1>
+      <div className="text-lg flex flex-col">
         <span>{duration}</span>
-        <span>{`(${member}인 프로젝트)`}</span>
+        <span>{`${member}인 프로젝트`}</span>
       </div>
       <div>
         <Image
@@ -30,7 +30,7 @@ const ProjectCard = (projectInfo: ProjectInfoType) => {
           className="rounded-lg shadow-custom"
         />
       </div>
-      <div>{description}</div>
+      <div className="">{description}</div>
       <div className="relative border-[1px] rounded-lg p-3 break-keep text-clip">
         <span className="absolute top-0 -translate-y-1/2 bg-white">
           <FaTools size={30} />

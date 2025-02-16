@@ -6,11 +6,11 @@ import { BACKEND_SERVICES_SKILLS } from "@/constants/skills/backendServicesSkill
 
 const Skills = () => {
   return (
-    <section className="">
-      <p className="flex justify-center text-5xl font-semibold pt-20 pb-10">
+    <section className="px-20">
+      <p className="flex justify-center text-5xl font-semibold pt-5 pb-10">
         My Skills
       </p>
-      <div className="grid grid-cols-4 gap-x-10">
+      <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-10">
         <SkillCard {...FRONTEND_SKILLS} />
         <SkillCard {...STYLING_SKILLS} />
         <SkillCard {...STATE_MANAGEMENT_SKILLS} />

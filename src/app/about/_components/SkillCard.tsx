@@ -4,10 +4,10 @@ const SkillCard = (skillInfo: SkillCardType) => {
   const { title, titleIcon, skills, colors, icons } = skillInfo;
 
   return (
-    <div className="bg-white bg-opacity-60 border-2 rounded-lg shadow-custom w-96 p-4">
+    <div className="bg-white bg-opacity-60 border-2 rounded-lg shadow-custom p-4 h-[490px]">
       <div className="flex items-start gap-1 pb-8">
         {titleIcon}
-        <span className="text-3xl">{title}</span>
+        <span className="sm:text-xl md:text-2xl lg:text-2xl">{title}</span>
       </div>
       <div className="mb-8">
         {skills.map((skill, idx) => (
